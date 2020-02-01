@@ -13,8 +13,6 @@ local.properties
 .loadpath
 .recommenders
 *.class
-*.classpath
-*.project
 
 # External tool builders
 .externalToolBuilders/
@@ -67,3 +65,8 @@ local.properties
 .sts4-cache/
 
 # End of https://www.gitignore.io/api/eclipse
+
+# 내가 넣은 것
+*.classpath
+*.project
+*/.settings/*
