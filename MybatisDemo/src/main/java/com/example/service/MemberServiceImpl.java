@@ -16,32 +16,27 @@ public class MemberServiceImpl implements MemberService {
 	
 	@Override
 	public void insertMember(MemberVO member) {
-		// TODO Auto-generated method stub
-
+		this.memberDao.create(member);
 	}
 
 	@Override
 	public MemberVO selectMember(String userid) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.memberDao.read(userid);
 	}
 
 	@Override
-	public List<MemberVO> selctAllMember() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<MemberVO> selectAllMember() {
+		return this.memberDao.readAll();
 	}
 
 	@Override
 	public void updateMember(MemberVO member) {
-		// TODO Auto-generated method stub
-
+		this.memberDao.update(member);
 	}
 
 	@Override
 	public void deleteMember(String userid) {
-		// TODO Auto-generated method stub
-
+		this.memberDao.delete(userid);
 	}
 
 }

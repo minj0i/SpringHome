@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page session="false" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<c:set var="list" value="${memberlist}" />
 <html>
 <head>
 	<title>Home</title>
@@ -8,7 +9,10 @@
 <h1>
 	Hello world!  
 </h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+<ul>
+	<c:forEach items="${list}" var="member">
+		<li>${member}</li>
+	</c:forEach>
+</ul>
 </body>
 </html>
