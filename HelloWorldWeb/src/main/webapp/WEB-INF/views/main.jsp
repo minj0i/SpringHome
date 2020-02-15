@@ -9,6 +9,6 @@
 </head>
 <body>
 	<h1>Main.jsp</h1>
-	<img src="images/jimin.jpeg"
+	<img src="images/jimin.jpeg">
 </body>
 </html>
