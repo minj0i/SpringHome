@@ -152,7 +152,7 @@
       
       
   
-      <Context docBase="MybatisDemo" path="/" reloadable="true" source="org.eclipse.jst.jee.server:MybatisDemo"/></Host>
+      </Host>
     </Engine>
   </Service>
 </Server>
